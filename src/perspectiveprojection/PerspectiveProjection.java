@@ -165,7 +165,7 @@ public class PerspectiveProjection extends JPanel {
 
         ProjectedVertex[] projectedVertices = new ProjectedVertex[mappedVertices.getColumnDimension()];
         for (int i = 0; i < projectedVertices.length; ++i) {
-            double scale = getHeight() / 2. / Math.max(mappedVertices.get(1, i), .01);
+            double scale = getHeight() / 2. / Math.max(mappedVertices.get(1, i), .001);
             projectedVertices[i] = new ProjectedVertex(
                     (int) (scale * mappedVertices.get(0, i) + getWidth() / 2.),
                     (int) (-scale * mappedVertices.get(2, i) + getHeight() / 2.),
