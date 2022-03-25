@@ -24,23 +24,14 @@ public class ProjectedVertex {
         this.inFront = inFront;
     }
 
-    /**
-     * @return the x
-     */
     public int getX() {
         return x;
     }
 
-    /**
-     * @return the y
-     */
     public int getY() {
         return y;
     }
 
-    /**
-     * @return the inFront
-     */
     public boolean isInFront() {
         return inFront;
     }
